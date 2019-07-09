@@ -1,0 +1,20 @@
+server:
+  port: 8101
+spring:
+  application:
+    name: config
+  profiles:
+    active: dev
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/nqqdegit/nqq.git #配置git仓库地址
+          searchPaths: repo #配置仓库路径
+          username: nqqdegit #访问git仓库的用户名
+          password: Nqq65721371.. #访问git仓库的用户密码
+      label: master #配置仓库的分支
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
