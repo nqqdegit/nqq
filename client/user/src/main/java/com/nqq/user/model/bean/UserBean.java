@@ -11,6 +11,7 @@
 package com.nqq.user.model.bean;
 
 import com.nqq.common.model.BaseModel;
+import org.springframework.stereotype.Repository;
 
 /**
  * 〈一句话功能简述〉<br> 
@@ -20,6 +21,7 @@ import com.nqq.common.model.BaseModel;
  * @create 2019/7/17
  * @since 1.0.0
  */
+@Repository
 public class UserBean extends BaseModel {
 
     private String mobile;

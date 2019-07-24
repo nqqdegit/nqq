@@ -7,7 +7,7 @@ function but() {
     var mobile=$("#mobile").val();
     var password=$("#password").val();
     $.ajax({
-        url:"http://localhost:8080/user",
+        url:"http://localhost:8080/addUser",
         type:"POST",
         data:{"mobile":mobile,"password":password},
         success:function () {

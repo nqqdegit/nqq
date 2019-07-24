@@ -16,6 +16,7 @@ import com.nqq.user.service.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 /**
@@ -31,8 +32,8 @@ public class UserServiceImpl implements UserService{
 
     private Logger logger= LoggerFactory.getLogger(UserServiceImpl.class);
 
-    @Autowired
-    private UserMapper userMapper;
+    @Qualifier
+    private UserMapper UserMapper;
 
     @Override
     public int addUser(UserBean user) throws Exception{
@@ -40,7 +41,7 @@ public class UserServiceImpl implements UserService{
         int i=0;
         try {
             logger.info("添加用户传入参数:{}",userbean.toString());
-           i=userMapper.addUser(userbean);
+           i=UserMapper.addUser(userbean);
            if(i>0){
                logger.info("添加成功");
            }

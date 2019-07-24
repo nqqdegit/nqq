@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      name: user,eureka,key,redis
+      name: user,eureka,key,redis,database,thymeleaf
       label: master
       discovery:
         enabled: true
