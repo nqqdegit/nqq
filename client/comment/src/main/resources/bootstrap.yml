@@ -1,7 +1,7 @@
 spring:
   cloud:
     config:
-      name: comment,eureka,key
+      name: comment,eureka,key,redis
       label: master
       discovery:
         enabled: true

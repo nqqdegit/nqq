@@ -12,6 +12,7 @@ package com.nqq.article;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.cloud.client.SpringCloudApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 /**
  * 〈一句话功能简述〉<br> 
@@ -22,6 +23,7 @@ import org.springframework.cloud.client.SpringCloudApplication;
  * @since 1.0.0
  */
 @SpringCloudApplication
+@ComponentScan(basePackages = "com.nqq")
 public class Application {
 
     public static void main(String[] args) {

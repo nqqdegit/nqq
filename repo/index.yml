@@ -5,3 +5,6 @@ spring:
     name: index
   profiles:
     active: dev
+mybatis:
+  typeAliasesPackage: com.nqq.model.bean
+  mapperLocations: classpath:mapper/*.xml
